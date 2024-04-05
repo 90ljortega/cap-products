@@ -125,3 +125,27 @@ entity SalesData {
         DeliveryDate : DateTime;
         Revenue      : Decimal(16, 2);
 };
+
+entity SelProducts1 as
+    select from Products {
+        *
+    };
+
+entity SelProducts2 as
+    select from Products {
+        Name,
+        Price,
+        Quantity,
+    };
+
+entity SelProducts3 as
+    select from Products
+    left join ProductReview
+        on Products.Name = ProductReview.Name
+    {
+        Rating,
+        Products.Name,
+        sum(Price) as TotalPrice,
+    }
+    group by Rating, Products.Name
+    Order by Rating;
