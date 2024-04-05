@@ -1,0 +1,11 @@
+{
+  "name": "products",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cds watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

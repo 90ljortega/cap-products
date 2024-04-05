@@ -31,7 +31,7 @@
       "type": "build.mta",
       "label": "Build ",
       "taskType": "Build",
-      "projectPath": "/home/user/projects/products",
+      "projectPath": "/home/user/projects/products/",
       "extensions": []
     },
     {
